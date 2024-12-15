@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/library-management-api-master.iml" filepath="$PROJECT_DIR$/.idea/library-management-api-master.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/pythonProject.iml" filepath="$PROJECT_DIR$/.idea/pythonProject.iml" />
+>>>>>>> 55a055b12175d87a0440d860c378ac2d6b807cfe
     </modules>
   </component>
 </project>
