@@ -1,0 +1,52 @@
+{
+  "info": {
+    "name": "Library Management API",
+    "_postman_id": "abc123",
+    "description": "A collection of requests for testing the Library Management API"
+  },
+  "item": [
+    {
+      "name": "Add a new book",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://localhost:5000/books",
+          "host": ["http", "localhost", "5000"],
+          "path": ["books"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\": \"The Great Gatsby\", \"author\": \"F. Scott Fitzgerald\", \"published_year\": 1925, \"isbn\": \"9780743273565\", \"genre\": \"Fiction\"}"
+        }
+      }
+    },
+    {
+      "name": "List all books",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5000/books",
+          "host": ["http", "localhost", "5000"],
+          "path": ["books"]
+        }
+      }
+    },
+    {
+      "name": "Search for books by author",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:5000/books?author=F. Scott Fitzgerald",
+          "host": ["http", "localhost", "5000"],
+          "path": ["books"],
+          "query": [
+            {
+              "key": "author",
+              "value": "F. Scott Fitzgerald"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
